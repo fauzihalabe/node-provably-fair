@@ -34,7 +34,7 @@ This package generates verifiably random numbers by combining blockchain data (B
 ### 1. Import and Initialize
 
 ```
-import { ProvablyFair } from 'provably-fair';
+import { ProvablyFair } from 'node-provably-fair';
 
 const provablyFair = new ProvablyFair();
 ```
@@ -99,13 +99,13 @@ This function allows you to verify that a generated random number is fair by com
 
 ```
 const isValid = provablyFair.verifyRoll(
-  'clientSeed123',
-  8756223,
-  'serverSeedExample',
-  'secretSaltExample',
-  123456,
-  'a3b5f69...',
-  '000000000000000000...'
+  clientSeed,
+  randomNumber,
+  serverSeed,
+  secretSalt,
+  nonce,
+  publicHash,
+  bitcoinHash
 );
 
 console.log(isValid); // true or false
@@ -242,7 +242,7 @@ This package is licensed under the [MIT License](LICENSE).
 
 With **Provably Fair**, you can ensure that random numbers are generated securely and transparently, making it ideal for applications where trust and fairness are critical, such as in gaming and gambling.
 
-Feel free to contribute or raise any issues on the [GitHub repository](https://github.com/fauzihalabe/provably-fair).
+Feel free to contribute or raise any issues on the [GitHub repository](https://github.com/fauzihalabe/node-provably-fair).
 
 
 # Gerador de Números Aleatórios Provavelmente Justo
@@ -280,7 +280,7 @@ Este pacote gera números aleatórios verificáveis combinando dados da blockcha
 ### 1. Importar e Inicializar
 
 ```
-import { ProvablyFair } from 'provably-fair';
+import { ProvablyFair } from 'node-provably-fair';
 
 const provablyFair = new ProvablyFair();
 ```
@@ -335,13 +335,13 @@ Esta função permite que você verifique se um número aleatório gerado é jus
 
 ```
 const isValid = provablyFair.verifyRoll(
-  'clientSeed123',
-  8756223,
-  'serverSeedExample',
-  'secretSaltExample',
-  123456,
-  'a3b5f69...',
-  '000000000000000000...'
+  clientSeed,
+  randomNumber,
+  serverSeed,
+  secretSalt,
+  nonce,
+  publicHash,
+  bitcoinHash
 );
 
 console.log(isValid); // true ou false
@@ -478,4 +478,4 @@ Este pacote está licenciado sob a [Licença MIT](LICENSE).
 
 Com **Provably Fair**, você garante que números aleatórios são gerados de forma segura e transparente, ideal para aplicações onde confiança e justiça são fundamentais, como em jogos e apostas.
 
-Fique à vontade para contribuir ou relatar qualquer problema no [repositório GitHub](https://github.com/fauzihalabe/provably-fair).
+Fique à vontade para contribuir ou relatar qualquer problema no [repositório GitHub](https://github.com/fauzihalabe/node-provably-fair).
