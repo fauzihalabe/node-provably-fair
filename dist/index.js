@@ -86,9 +86,9 @@ class ProvablyFair {
      * @returns The win interval corresponding to the percentage.
      */
     getWinInterval(percentage, totalRange = 10000000) {
-        const winRange = Math.round((percentage / 100) * totalRange); // calcula o tamanho do intervalo
-        const end = totalRange; // O fim será sempre o totalRange
-        const start = totalRange - winRange + 1; // O início será calculado para que o intervalo tenha o tamanho correto
+        const winRange = Math.round((percentage / 100) * totalRange); // calculate the size of the winning range based on the percentage
+        const end = totalRange; // The end will always be the totalRange
+        const start = totalRange - winRange + 1; // Calculate the start to ensure the range ends at the totalRange
         return {
             percentage,
             interval: [start, end]
