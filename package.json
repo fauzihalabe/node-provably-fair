@@ -1,15 +1,33 @@
 {
-  "name": "probabily-fair",
+  "name": "provably-fair",
   "version": "1.0.0",
-  "description": "",
+  "description": "A provably fair system for generating and verifying random numbers. Includes support for generating random outcomes based on blockchain data, ensuring fair and tamper-proof results.",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fauzihalabe/provably-fair"
+  },
+  "keywords": [
+    "provably-fair",
+    "random-number",
+    "blockchain",
+    "roulette",
+    "spin",
+    "fairness",
+    "crypto",
+    "bitcoin",
+    "npm"
+  ],
+  "author": "Fauzi Halabe",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "uuid": "^10.0.0"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/uuid": "^10.0.0",
