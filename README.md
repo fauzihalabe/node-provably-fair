@@ -147,16 +147,18 @@ This function returns an array of win intervals for multiple percentages.
 #### Example:
 
 ```
-const winIntervals = provablyFair.getWinIntervals([10, 20, 30]);
+const winIntervals = provablyFair.getWinIntervals([20, 20, 20, 20, 20]);
 console.log(winIntervals);
 ```
 
 #### Response:
 ```
 [
-  { percentage: 10, interval: [1, 1000000] },
-  { percentage: 20, interval: [1000001, 3000000] },
-  { percentage: 30, interval: [3000001, 6000000] }
+  { percentage: 20, interval: [ 1, 2000000 ] },
+  { percentage: 20, interval: [ 2000001, 4000000 ] },
+  { percentage: 20, interval: [ 4000001, 6000000 ] },
+  { percentage: 20, interval: [ 6000001, 8000000 ] },
+  { percentage: 20, interval: [ 8000001, 10000000 ] }
 ]
 ```
 
@@ -383,16 +385,18 @@ Esta função retorna um array de intervalos de vitória para múltiplas porcent
 #### Exemplo:
 
 ```
-const winIntervals = provablyFair.getWinIntervals([10, 20, 30]);
+const winIntervals = provablyFair.getWinIntervals([20, 20, 20, 20, 20]);
 console.log(winIntervals);
 ```
 
 #### Resposta:
 ```
 [
-  { percentage: 10, interval: [1, 1000000] },
-  { percentage: 20, interval: [1000001, 3000000] },
-  { percentage: 30, interval: [3000001, 6000000] }
+  { percentage: 20, interval: [ 1, 2000000 ] },
+  { percentage: 20, interval: [ 2000001, 4000000 ] },
+  { percentage: 20, interval: [ 4000001, 6000000 ] },
+  { percentage: 20, interval: [ 6000001, 8000000 ] },
+  { percentage: 20, interval: [ 8000001, 10000000 ] }
 ]
 ```
 
