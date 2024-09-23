@@ -242,7 +242,7 @@ This package is licensed under the [MIT License](LICENSE).
 
 With **Provably Fair**, you can ensure that random numbers are generated securely and transparently, making it ideal for applications where trust and fairness are critical, such as in gaming and gambling.
 
-Feel free to contribute or raise any issues on the [GitHub repository](https://github.com/yourusername/provably-fair).
+Feel free to contribute or raise any issues on the [GitHub repository](https://github.com/fauzihalabe/provably-fair).
 
 
 # Gerador de Números Aleatórios Provavelmente Justo
@@ -478,4 +478,4 @@ Este pacote está licenciado sob a [Licença MIT](LICENSE).
 
 Com **Provably Fair**, você garante que números aleatórios são gerados de forma segura e transparente, ideal para aplicações onde confiança e justiça são fundamentais, como em jogos e apostas.
 
-Fique à vontade para contribuir ou relatar qualquer problema no [repositório GitHub](https://github.com/seuusuario/provably-fair).
+Fique à vontade para contribuir ou relatar qualquer problema no [repositório GitHub](https://github.com/fauzihalabe/provably-fair).
