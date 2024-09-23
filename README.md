@@ -8,13 +8,13 @@ A provably fair system for generating and verifying random numbers based on bloc
 You can install this package using npm:
 
 ```
-npm install provably-fair
+npm install node-provably-fair
 ```
 
 or using yarn:
 
 ```
-yarn add provably-fair
+yarn add node-provably-fair
 ```
 
 ## How It Works
@@ -254,13 +254,13 @@ Um sistema provavelmente justo para gerar e verificar números aleatórios com b
 Você pode instalar este pacote usando npm:
 
 ```
-npm install provably-fair
+npm install node-provably-fair
 ```
 
 ou usando yarn:
 
 ```
-yarn add provably-fair
+yarn add node-provably-fair
 ```
 
 ## Como Funciona
