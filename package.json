@@ -1,6 +1,6 @@
 {
   "name": "node-provably-fair",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "A provably fair system for generating and verifying random numbers. Includes support for generating random outcomes based on blockchain data, ensuring fair and tamper-proof results.",
   "main": "dist/index.js",
   "scripts": {

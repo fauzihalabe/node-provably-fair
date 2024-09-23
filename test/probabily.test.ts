@@ -9,7 +9,7 @@ describe('ProvablyFair', () => {
     });
 
     test('Deve gerar um intervalo de vitória válido para uma porcentagem', () => {
-        const percentage = 15;
+        const percentage = 0.05;
         const result = provablyFair.getWinInterval(percentage);
         console.log('Resultado para getWinInterval):', result);
         expect(result.percentage).toBe(percentage);

@@ -81,14 +81,15 @@ export class ProvablyFair {
    * @returns The win interval corresponding to the percentage.
    */
   public getWinInterval(percentage: number, totalRange: number = 10000000): { percentage: number, interval: [number, number] } {
-    const winRange = Math.round((percentage / 100) * totalRange);
-    const start = Math.floor(Math.random() * (totalRange - winRange + 1)) + 1;
-    const end = start + winRange - 1;
+    const winRange = Math.round((percentage / 100) * totalRange); // calcula o tamanho do intervalo
+    const end = totalRange; // O fim será sempre o totalRange
+    const start = totalRange - winRange + 1; // O início será calculado para que o intervalo tenha o tamanho correto
     return {
       percentage,
       interval: [start, end]
     };
   }
+
 
   /**
    * Returns an array of intervals based on a provided array of percentages.
@@ -155,10 +156,10 @@ export class ProvablyFair {
 
     // Get additional entropy from the system
     const systemEntropy = [
-        process.pid, // Process ID
-        os.uptime(), // System uptime
-        os.freemem(), // Free memory
-        os.loadavg()[0] // System load average
+      process.pid, // Process ID
+      os.uptime(), // System uptime
+      os.freemem(), // Free memory
+      os.loadavg()[0] // System load average
     ].join('-');
 
     const randomBuffer1 = crypto.randomBytes(8); // Generate 8 bytes of additional entropy
