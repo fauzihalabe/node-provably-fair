@@ -1,1 +1,10 @@
-node_modules
+.DS_Store
+.idea/
+.vscode/
+*.log
+*.swp
+*.tsbuildinfo
+build/
+dist/
+node_modules/
+Thumbs.db
